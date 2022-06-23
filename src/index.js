@@ -1,4 +1,4 @@
-import { addCarouselEventListeners } from './carousel';
+import { addCarouselEventListeners, drawDots } from './carousel';
 import { addNavEventListener } from './dropMenus';
 import { addMobileNavEventListener } from './mobileMenus';
 
@@ -8,3 +8,4 @@ addNavEventListener();
 addMobileNavEventListener();
 
 addCarouselEventListeners();
+drawDots();
