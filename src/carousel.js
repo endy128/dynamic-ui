@@ -114,7 +114,7 @@ const movePicsLeft = () => {
 const addCarouselEventListeners = () => {
   const buttonLeft = document.querySelector('.button-left');
   const buttonRight = document.querySelector('.button-right');
-  const dots = Array.from(document.querySelectorAll('.dots'));
+  const dots = Array.from(document.querySelectorAll('.dot'));
   buttonLeft.addEventListener('click', () => {
     movePicsLeft();
   });

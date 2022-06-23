@@ -7,5 +7,5 @@ console.log('Hello!!');
 addNavEventListener();
 addMobileNavEventListener();
 
-addCarouselEventListeners();
 drawDots();
+addCarouselEventListeners();
