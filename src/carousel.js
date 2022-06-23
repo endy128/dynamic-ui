@@ -1,9 +1,7 @@
 const navigateToPic = (dot) => {
   const { index } = dot.dataset;
-  const elem = document.querySelector('.pics');
   const newPosition = (index * 600) * -1;
   const delay = 1 / (Math.abs((newPosition - getPosition()) / 600));
-  console.log(delay);
   animateChange(newPosition, delay);
 };
 
@@ -51,7 +49,6 @@ const getPosition = () => {
   if (div.style.left === '') div.style.left = '0px';
   let position = div.style.left;
   position = position.substr(0, position.length - 2);
-  console.log(`Position: ${position}`);
   return (parseInt(position, 10));
 };
 
@@ -73,7 +70,7 @@ const isAtEnd = () => {
   return false;
 };
 
-const movePicsRight = () => {
+const movePicsLeft = () => {
   let id = null;
   const elem = document.querySelector('.pics');
   // if (elem.style.left === '') elem.style.left = '0px';
@@ -92,7 +89,7 @@ const movePicsRight = () => {
   id = setInterval(frame, 1);
 };
 
-const movePicsLeft = () => {
+const movePicsRight = () => {
   let id = null;
   const elem = document.querySelector('.pics');
   // if (elem.style.left === '') elem.style.left = '0px';
